@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EdenFlor — Le catalogue : bouquets, compositions en vase, plante fleurie</title>
+<meta name="description" content="Huit gammes de bouquets filtrables par occasion : anniversaire, amour, naissance, remerciement, félicitations, entreprise.">
+<meta property="og:title" content="EdenFlor — Le catalogue : bouquets, compositions en vase, plante fleurie">
+<meta property="og:description" content="Huit gammes de bouquets filtrables par occasion : anniversaire, amour, naissance, remerciement, félicitations, entreprise.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/site.css?v=4">
+</head>
+<body>
+<div class="demo" id="demo">
+  <span><b>Maquette de démonstration.</b> Les visuels sont des illustrations générées, pas des photos de bouquets réels. Les prix affichés sont des exemples. Zones de livraison, délais et coordonnées restent à définir.</span>
+  <button onclick="document.getElementById('demo').remove()">Masquer</button>
+</div>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg class="mk" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 29V15" stroke="#3E5C46" stroke-width="2.1" stroke-linecap="round"/><path d="M16 15c0-4 3-7 7-7 0 4-3 7-7 7Z" fill="#3E5C46"/><path d="M16 19c0-4-3-7-7-7 0 4 3 7 7 7Z" fill="#7E9A84"/><circle cx="16" cy="9" r="4.2" fill="#C1746B"/></svg><span class="nm">Eden<em>Flor</em></span></a>
+    <nav class="nav" id="nav"><a href="index.html">Accueil</a><a href="boutique.html" aria-current="page">Boutique</a><a href="bouquet.html">Une fiche</a><a href="deuil.html">Deuil</a><a href="livraison.html">Livraison</a></nav>
+    <div class="tools">
+      <a class="icb" href="boutique.html" aria-label="Panier, 0 article"><svg class="pan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h13l-1.4 8.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.7L6 4H3"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg><span class="lab">Panier</span><span class="n">0</span></a>
+    </div>
+    <button class="burger" aria-label="Menu" aria-expanded="false" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="hero" style="min-height:min(46vh,420px)">
+  <img src="assets/hero-boutique.svg" alt="Illustration — sélection EdenFlor">
+  <div class="wrap">
+    <div class="eyebrow">Boutique</div>
+    <h1>Le catalogue.</h1>
+    <p class="sub">Huit gammes de bouquets, deux compositions en vase, une plante fleurie. Filtre par occasion ci-dessous.</p>
+  </div>
+</div>
+
+<section id="occasions">
+  <div class="wrap">
+    <div class="filtres" id="filtres"><button data-oc="" aria-pressed="true">Tout</button><button data-oc="Anniversaire" aria-pressed="false">Anniversaire</button><button data-oc="Amour" aria-pressed="false">Amour</button><button data-oc="Naissance" aria-pressed="false">Naissance</button><button data-oc="Félicitations" aria-pressed="false">Félicitations</button><button data-oc="Remerciement" aria-pressed="false">Remerciement</button><button data-oc="Entreprise" aria-pressed="false">Entreprise</button><button data-oc="Mariage" aria-pressed="false">Mariage</button><button data-oc="Deuil" aria-pressed="false">Deuil</button></div>
+    <div class="grid g4" id="catalogue"><article class="pc" data-oc="Anniversaire|Amour|Naissance">
+  <div class="im"><img src="assets/b-tendresse.svg" alt="Illustration — Tendresse" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Tons poudrés</span>
+    <h3>Tendresse</h3>
+    <p>Roses, renoncules et gypsophile dans une gamme rose pâle. Le bouquet qui ne se trompe jamais de destinataire : il convient à une déclaration comme à un merci.</p>
+    <ul class="oc"><li>Anniversaire</li><li>Amour</li><li>Naissance</li></ul>
+    <div class="ft"><span class="px">dès 45&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Anniversaire|Félicitations|Remerciement">
+  <div class="im"><img src="assets/b-soleil.svg" alt="Illustration — Plein Soleil" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Tons jaunes</span>
+    <h3>Plein Soleil</h3>
+    <p>Tournesols, roses jaunes et feuillage clair. Une gamme franche, qui se voit d&#x27;un bout à l&#x27;autre d&#x27;une pièce — pour une nouvelle qu&#x27;on annonce fort.</p>
+    <ul class="oc"><li>Anniversaire</li><li>Félicitations</li><li>Remerciement</li></ul>
+    <div class="ft"><span class="px">dès 42&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Amour|Remerciement|Entreprise">
+  <div class="im"><img src="assets/b-crepuscule.svg" alt="Illustration — Crépuscule" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Tons violets</span>
+    <h3>Crépuscule</h3>
+    <p>Lisianthus, statice et eucalyptus. La gamme la plus sobre du catalogue, celle qui tient dans un bureau ou une entrée sans écraser ce qu&#x27;il y a autour.</p>
+    <ul class="oc"><li>Amour</li><li>Remerciement</li><li>Entreprise</li></ul>
+    <div class="ft"><span class="px">dès 48&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Naissance|Mariage|Deuil|Entreprise">
+  <div class="im"><img src="assets/b-neige.svg" alt="Illustration — Neige" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Blanc et vert</span>
+    <h3>Neige</h3>
+    <p>Roses blanches, freesias et verdure. Le blanc est la seule gamme qui traverse toutes les occasions — d&#x27;une naissance à un hommage, selon la façon de le lier.</p>
+    <ul class="oc"><li>Naissance</li><li>Mariage</li><li>Deuil</li><li>Entreprise</li></ul>
+    <div class="ft"><span class="px">dès 46&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Anniversaire|Félicitations|Amour">
+  <div class="im"><img src="assets/b-brasier.svg" alt="Illustration — Brasier" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Tons corail</span>
+    <h3>Brasier</h3>
+    <p>Renoncules corail, roses orangées et feuillage sombre. Une gamme chaude, pour quelqu&#x27;un dont on sait qu&#x27;il n&#x27;aime pas le pastel.</p>
+    <ul class="oc"><li>Anniversaire</li><li>Félicitations</li><li>Amour</li></ul>
+    <div class="ft"><span class="px">dès 44&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Entreprise|Remerciement|Anniversaire">
+  <div class="im"><img src="assets/b-jardin.svg" alt="Illustration — Jardin d&#x27;Hiver" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Composition en vase</span>
+    <h3>Jardin d&#x27;Hiver</h3>
+    <p>Composition montée dans son vase, prête à poser. Rien à couper, rien à arranger : c&#x27;est ce qu&#x27;il faut quand le destinataire est au travail.</p>
+    <ul class="oc"><li>Entreprise</li><li>Remerciement</li><li>Anniversaire</li></ul>
+    <div class="ft"><span class="px">dès 78&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Amour|Remerciement">
+  <div class="im"><img src="assets/b-atelier.svg" alt="Illustration — Atelier" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Composition en vase</span>
+    <h3>Atelier</h3>
+    <p>Même principe, gamme poudrée. Le vase est compris et fait partie du prix.</p>
+    <ul class="oc"><li>Amour</li><li>Remerciement</li></ul>
+    <div class="ft"><span class="px">dès 74&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article><article class="pc" data-oc="Entreprise|Remerciement|Naissance">
+  <div class="im"><img src="assets/b-verdure.svg" alt="Illustration — Verdure" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="bd">
+    <span class="gam">Plante fleurie</span>
+    <h3>Verdure</h3>
+    <p>Une plante fleurie en pot plutôt qu&#x27;un bouquet coupé : elle tient des mois, et c&#x27;est souvent le meilleur choix pour un bureau.</p>
+    <ul class="oc"><li>Entreprise</li><li>Remerciement</li><li>Naissance</li></ul>
+    <div class="ft"><span class="px">dès 52&nbsp;€<span class="ex">exemple</span></span><a href="bouquet.html">Voir la fiche <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</article></div>
+    <p class="vide" id="vide" hidden>Aucun bouquet dans cette occasion pour le moment.</p>
+    <p class="note">Les filtres fonctionnent réellement — ils s'appliquent dans le navigateur, sans recharger la page. Les illustrations sont générées, les prix sont des exemples.</p>
+  </div>
+</section>
+
+<section class="cream" id="devis">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Sur devis</div>
+      <h2>Deux demandes qui ne passent pas par le panier.</h2>
+      <p class="lede" style="margin-top:16px">L'abonnement et l'événementiel se chiffrent après une conversation, pas avant. Un bouton d'achat sur ces deux-là donnerait un prix faux dans les deux sens.</p>
+    </div>
+    <div class="grid g2">
+      <article class="pc">
+        <div class="im"><img src="assets/abo-1.svg" alt="Illustration — abonnement fleurs" loading="lazy"><span class="tag">Illustration</span></div>
+        <div class="bd">
+          <span class="gam">Abonnement</span>
+          <h3>Des fleurs chaque semaine</h3>
+          <p>Pour un accueil, une salle d'attente, une table. La gamme suit la saison plutôt qu'un catalogue fixe : c'est ce qui permet de tenir un budget constant toute l'année.</p>
+          <div class="ft"><span class="px"><span class="tbd">fréquence et tarif à définir</span></span><a href="index.html#contact">Nous écrire <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="im"><img src="assets/evt-1.svg" alt="Illustration — composition événementielle" loading="lazy"><span class="tag">Illustration</span></div>
+        <div class="bd">
+          <span class="gam">Événement</span>
+          <h3>Mariage, réception, inauguration</h3>
+          <p>Cérémonie, tables, entrée. La date, le lieu et le nombre de tables changent tout : ça se prépare des semaines à l'avance, et ça se voit sur place.</p>
+          <div class="ft"><span class="px"><span class="tbd">sur devis</span></span><a href="index.html#contact">Nous écrire <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="split" style="align-items:center">
+      <div>
+        <div class="eyebrow">Avant de commander</div>
+        <h2>Deux choses à savoir.</h2>
+        <p class="lede" style="margin-top:16px">La première : le bouquet livré n'est pas exactement celui de l'illustration, et c'est expliqué sur chaque fiche. La seconde : pour des obsèques, ce n'est pas ce catalogue qu'il faut, mais le parcours dédié — il demande l'heure de la cérémonie et le lieu.</p>
+        <div class="cta" style="display:flex;gap:12px;margin-top:26px;flex-wrap:wrap">
+          <a class="btn btn-o" href="index.html#substitution">La règle de substitution</a>
+          <a class="btn btn-p" href="deuil.html">Commande pour obsèques <svg class="ar" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div><div class="subst">
+  <h4>Ce que nous garantissons, et ce que nous ne garantissons pas</h4>
+  <p>La fleur est un produit vivant et saisonnier. Quand une variété manque à l'arrivage, elle est remplacée par une tige de valeur et de tenue équivalentes, dans la même gamme de couleurs.</p>
+  <p><b>Garanti :</b> la gamme de couleurs, la taille, la valeur. <b>Non garanti :</b> la liste exacte des variétés. Nous l'écrivons ici plutôt que dans les conditions générales, parce que c'est ici qu'on le lit avant d'acheter.</p>
+</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft-main">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand"><svg class="mk" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 29V15" stroke="#3E5C46" stroke-width="2.1" stroke-linecap="round"/><path d="M16 15c0-4 3-7 7-7 0 4-3 7-7 7Z" fill="#3E5C46"/><path d="M16 19c0-4-3-7-7-7 0 4 3 7 7 7Z" fill="#7E9A84"/><circle cx="16" cy="9" r="4.2" fill="#C1746B"/></svg><span class="nm">Eden<em>Flor</em></span></div>
+        <p class="bl">Fleuriste. Bouquets composés à la main, livrés le jour même dans les zones desservies.</p>
+        <ul style="margin-top:18px">
+          <li class="muted" style="color:#8FA391">Coordonnées à compléter</li>
+          <li><a href="index.html#contact">Formulaire de contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="boutique.html">Tous les bouquets</a></li>
+          <li><a href="boutique.html#occasions">Par occasion</a></li>
+          <li><a href="bouquet.html">Exemple de fiche</a></li>
+          <li><a href="deuil.html">Deuil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Commander</h4>
+        <ul>
+          <li><a href="livraison.html">Zones et délais</a></li>
+          <li><a href="livraison.html#absence">En cas d'absence</a></li>
+          <li><a href="livraison.html#fraicheur">Garantie de fraîcheur</a></li>
+          <li><a href="index.html#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>La maison</h4>
+        <ul>
+          <li><a href="index.html#methode">Comment on travaille</a></li>
+          <li><a href="index.html#substitution">La règle de substitution</a></li>
+          <li><a href="index.html#contact">Nous écrire</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ft-bot">
+      <span>© 2026 EdenFlor. Tous droits réservés.</span>
+      <span>Mentions légales · CGV · Politique de confidentialité — à rédiger</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), n=document.getElementById('nav');
+  if(b&&n) b.addEventListener('click',function(){
+    var o=n.classList.toggle('open');
+    b.setAttribute('aria-expanded', o?'true':'false');
+  });
+  // Les formulaires n'ont pas d'adresse de reception : on intercepte plutot
+  // que de laisser un envoi recharger la page et avoir l'air casse.
+  document.querySelectorAll('form[data-demo]').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var n=f.querySelector('[data-note]');
+      if(n) n.textContent="Formulaire de démonstration — non connecté. Indiquez l'adresse de réception et je le branche.";
+    });
+  });
+  // Choix de taille sur la fiche produit : purement visuel, pas de panier.
+  document.querySelectorAll('[data-opts]').forEach(function(g){
+    g.querySelectorAll('.opt').forEach(function(o){
+      o.addEventListener('click',function(){
+        g.querySelectorAll('.opt').forEach(function(x){x.classList.remove('on')});
+        o.classList.add('on');
+        var p=document.getElementById('prix-choisi');
+        if(p) p.textContent=o.dataset.prix;
+      });
+    });
+  });
+  // Filtres de la boutique : ils filtrent pour de vrai, cote navigateur.
+  var f=document.getElementById('filtres');
+  if(f){
+    var cartes=[].slice.call(document.querySelectorAll('#catalogue [data-oc]'));
+    var vide=document.getElementById('vide');
+    f.addEventListener('click',function(e){
+      var b=e.target.closest('button'); if(!b) return;
+      f.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      var oc=b.dataset.oc, n=0;
+      cartes.forEach(function(c){
+        var ok = !oc || c.dataset.oc.split('|').indexOf(oc)>-1;
+        c.style.display = ok?'':'none';
+        if(ok) n++;
+      });
+      if(vide) vide.hidden = n>0;
+    });
+  }
+})();
+</script>
+</body>
+</html>
